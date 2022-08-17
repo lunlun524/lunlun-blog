@@ -6,7 +6,8 @@
   "scripts": {
     "docs:build": "vuepress build src",
     "docs:clean-dev": "vuepress dev src --clean-cache",
-    "docs:dev": "vuepress dev src"
+    "docs:dev": "vuepress dev src",
+    "publish": "mv ./src/.vuepress/dist ./dist && git add . && git commit -m 'publish' && git push origin master"
   },
   "devDependencies": {
     "@vuepress/client": "^2.0.0-beta.49",
